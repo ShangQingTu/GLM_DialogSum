@@ -446,7 +446,9 @@ if __name__ == '__main__':
     torch.backends.cudnn.enabled = False
 
     # Arguments.
+    print("#### Begin get args")
     args = get_args()
+    print("#### Finish get args")
     assert args.finetune
 
     # Pytorch distributed.
